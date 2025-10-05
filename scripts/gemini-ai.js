@@ -1,6 +1,6 @@
 class GeminiAI {
     constructor() {
-        this.backendUrl = 'http://localhost:3001/api';
+        this.backendUrl = 'https://abovecloud.earth/api';
         this.conversationHistory = [];
     }
 
