@@ -10,7 +10,9 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors({
+    origin: ['https://abovecloud.earth'],
+}));
 app.use(express.json());
 
 // Hava durumu endpoint'i - 7 GÜNLÜK TAHMİN

@@ -1,6 +1,7 @@
 class GeminiAI {
     constructor() {
-        this.backendUrl = 'http://localhost:3001/api';
+        const configuredUrl = (typeof window !== 'undefined' && window.__BACKEND_URL__) ? window.__BACKEND_URL__ : `${window.location.origin}`;
+        this.backendUrl = `${configuredUrl.replace(/\/$/, '')}/api`;
         this.conversationHistory = [];
     }
 
