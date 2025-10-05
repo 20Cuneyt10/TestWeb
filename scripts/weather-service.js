@@ -1,6 +1,6 @@
 class WeatherService {
     constructor() {
-        this.backendUrl = 'http://localhost:3001/api';
+        this.backendUrl = 'https://abovecloud.earth/api';
     }
 
     async getComprehensiveWeather(lat, lon) {
